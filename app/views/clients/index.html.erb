@@ -1,0 +1,26 @@
+<section>
+	<h4 id="clients-title"><%= @auditor.name %>'s Clients</h4>
+</section>
+
+<div id="add-client">
+	<%= link_to "Add new client", new_auditor_client_path(@auditor) %>
+</div>
+
+<div>
+Number of Clients: <%= @clients.length %>
+</div><br>
+
+<ul>
+  <% @clients.each do |c| %>   
+    <div id="client-list">
+    	<%= c.id %>) Name: <%= c.name %>, year_end: <%= c.year_end %>, Status: <%= c.status %>
+    	<div id="show-client">
+			<%= link_to "Client Profile", client_profile_path(c.id) %>
+		</div>
+    </div>
+  <% end %>
+</ul>
+
+
+
+

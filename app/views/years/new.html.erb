@@ -1,0 +1,10 @@
+
+
+<div id="new-year-form">
+  <%= form_for @year, url: create_year_path do |f| %>
+    <div>
+      <%= f.text_field :number, placeholder: "year", :class => 'form-control' %>
+    </div>
+    <%= f.submit "Add year", :class => 'btn btn-primary' %>
+  <% end %>
+</div>

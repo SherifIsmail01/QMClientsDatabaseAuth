@@ -1,0 +1,24 @@
+<h1 style="text-align: center;"><%= @client.name %></h1>
+<div style="float: right; padding-top: 80px; padding-bottom: 5px; padding-right: 20px;" id="edit-client">
+	<%= link_to "Edit client", edit_client_path(@client.id) %>
+</div><br>
+
+
+
+<hr style="padding-top: 10px;">
+<hr>
+<p><strong>Status:</strong> <%= @client.status %></p>
+<p><strong>Year-end:</strong> <%= @client.year_end %>
+<hr>
+
+
+
+<div id="client-years">
+	<%= link_to "Client data", client_years_path(@client, @years) %>
+</div>
+
+
+<div style="float: right; padding-right: 20px; padding-top: 10px; color: red;"><%= link_to "Delete client", delete_client_path(@client), method: :delete %></div>
+
+
+

@@ -1,0 +1,44 @@
+<h4 id="users-title">Clients Index</h4>
+
+<div style="padding-bottom: 10px;">
+There are currently <%= @clients.length %> clients
+</div>
+
+<div style="padding-bottom: 10px; color: blue">Yellow: warning | Blue: primary | Light-blue: info | Red: danger | Green: success</div>
+<div style="padding-bottom: 40px;">
+	<ul>
+
+<% @clients.each do |c| %>
+    <% if %>
+    	<% c.status == "In-progress" %>
+	    	<li class="list-group-item list-group-item-warning" style="width: 800px; ">
+				<%= c.id %>) Name: <%= c.name %>, year_end: <%= c.year_end %>, Status: <%= c.status %>
+			</li>	    	<div id="show-client">
+				<%= link_to "Client Profile", client_profile_path(c.id) %>
+			</div><br>
+	<% elsif%>
+		<% c.status == "Not started" %>
+			<li class="list-group-item list-group-item-danger" style="width: 800px; ">
+					<%= c.id %>) Name: <%= c.name %>, year_end: <%= c.year_end %>, Status: <%= c.status %>
+				</li>	    	<div id="show-client">
+				<%= link_to "Client Profile", client_profile_path(c.id) %>
+			</div><br>
+	<% elsif%>
+		<% c.status == "Completed" %>
+			<li class="list-group-item list-group-item-success" style="width: 800px; ">
+					<%= c.id %>) Name: <%= c.name %>, year_end: <%= c.year_end %>, Status: <%= c.status %>
+				</li>	    	<div id="show-client">
+				<%= link_to "Client Profile", client_profile_path(c.id) %>
+			</div><br>
+	<% else %>
+	    	<li class="list-group-item list-group-item-primary" style="width: 800px; ">
+		    	<%= c.id %>) Name: <%= c.name %>, year_end: <%= c.year_end %>, Status: <%= c.status %>
+		    </li>	    	<div id="show-client">
+				<%= link_to "Client Profile", client_profile_path(c.id) %>
+			</div><br>
+
+	<% end %>
+<% end %>
+
+	</ul>
+</div>

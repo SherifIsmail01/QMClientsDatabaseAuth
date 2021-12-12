@@ -1,0 +1,8 @@
+<h4>All files to be sent to client</h4>
+
+<h2>Import Files</h2>
+
+<%= form_tag import_files_to_be_sent_to_clients_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

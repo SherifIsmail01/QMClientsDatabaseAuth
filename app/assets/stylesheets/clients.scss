@@ -1,0 +1,62 @@
+// Place all the styles related to the clients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#clients-title {
+	text-align: center;
+	padding-top: 10px;
+}
+#new_client_link {
+	float: right;
+	padding-right: 20px;
+	padding-top: 0px;
+}
+
+#new-client-form{
+    border: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#new-client-form div{
+    padding:10px 0px;
+    border: black;
+}
+
+.floatright {
+	text-align:right;
+	padding-left:50px;
+	float: right;
+	height: 400px;
+	width: 70%;
+}
+
+.floatleft {
+	float:left;
+	width: 30%;
+	height: 400px;
+	text-align:left;
+}
+
+
+#client-page{
+	float: right;
+	padding-right: 20px;
+}
+
+
+
+#client-profile{
+	float: left;
+	padding-top: 15px;
+}
+
+#show-client{
+	float: right;
+	padding-right: 20px;
+	border-top: 0px;
+	padding-bottom:30px;
+	text-align:center;
+}
+
+

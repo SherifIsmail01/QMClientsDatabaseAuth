@@ -1,0 +1,10 @@
+Add new Auditor
+
+<div id=new-auditor-form>
+  <%= form_for @auditor, url: create_auditor_path do |f| %>
+    <div>
+      name: <%= f.text_field :name, placeholder: "Auditor Name", :class => 'form-control' %>
+    </div><br>
+    <%= f.submit "Create Auditor", :class => 'btn btn-primary' %>
+  <% end %>
+</div>

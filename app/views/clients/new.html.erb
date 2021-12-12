@@ -1,0 +1,17 @@
+
+Add new client
+
+<div id=new-client-form>
+  <%= form_for @client, url: create_client_path do |f| %>
+    <div>
+      name: <%= f.text_field :name, placeholder: "Client Name", :class => 'form-control' %>
+    </div>
+    <div>
+      year_end: <%= f.text_field :year_end, placeholder: "year end", :class => 'form-control' %>
+    </div>
+      <div>
+      status: <%= f.text_field :status, placeholder: "status", :class => 'form-control' %>
+    </div>
+    <%= f.submit "Create client", :class => 'btn btn-primary' %>
+  <% end %>
+</div>

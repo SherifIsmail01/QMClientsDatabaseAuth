@@ -1,0 +1,154 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *
+ */
+ 
+@import "bootstrap";
+@import "users";
+@import "auditors";
+@import "clients";
+@import "years";
+@import "qm_resources";
+@import "reports";
+
+body{
+    font-family: center; 
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-family: "Helvetica";
+}
+
+h3 {
+    font-size:30px;
+    padding-top: 10px;
+    text-align:center;
+    color:white;
+}
+
+header{
+    background-color: #800080 ; 
+    width:100%;
+    height:160px;
+    padding-top: 0px;
+    padding-bottom:80px;
+    margin-left: 0px;
+}
+
+footer{
+    position: fixed;
+    color: white; 
+    padding-top:20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height:10%;   /* Height of the footer */
+    text-align: center;
+    background-color:#800080 ;
+    font-size: 15px;
+    text-decoration-color: #fa5705 ;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+
+}
+
+li a:hover{
+    font-weight: bold;
+    text-decoration: none; 
+    color:white; 
+}
+
+#auth_form{
+    border: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#auth_form div{
+    padding:10px 0px;
+    border: black;
+}
+
+
+#main-page-body{
+	padding-left: 10px;
+}
+
+#clients_link{
+	float: left;
+    padding-left: 10px;
+    padding-top: 0px;
+    border-bottom: 10px;
+}
+
+#homepage_link{
+    float: left;
+    padding-left: 10px;
+    border-bottom: 5px;
+}
+
+#auditors_link{
+    float: left;
+    padding-left: 10px;
+    padding-top: 0px;
+    border-bottom: 10px;
+}
+
+#analysis_link{
+    float: left;
+    padding-left: 10px;
+    border-bottom: 0px;
+}
+
+.btn{
+    background-color: #ffdf32;
+    border: none;
+    color: black;
+    border-right: 200px;
+}
+
+.form-control{
+    margin:auto;
+    width: 350px;
+}
+
+
+#create-account{
+    padding-top: 5px;
+}
+
+#user-profile{
+    padding-top: 0px;
+}
+
+#logout{
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+#login{
+    float:right;
+    padding-right: 20px; 
+    padding-top: 0px;  
+    text-align: right; 
+}
+
+

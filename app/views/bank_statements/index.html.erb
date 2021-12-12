@@ -1,0 +1,8 @@
+<h4>All bank statements</h4>
+
+<h2>Import Files</h2>
+
+<%= form_tag import_bank_statements_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

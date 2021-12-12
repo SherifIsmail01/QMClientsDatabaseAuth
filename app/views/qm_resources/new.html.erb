@@ -1,0 +1,15 @@
+Add Resource
+
+<div id="qm-form">
+  <%= form_for @qm_resource, url: create_qm_resource_path do |q| %>
+    <div>
+      <%= q.text_field :templates, placeholder: "Templates", :class => 'form-control' %>
+    </div>
+    <div>
+      <%= q.text_field :training, placeholder: "Training", :class => 'form-control' %>
+    </div>
+    <%= q.submit "Add resource", :class => 'btn btn-primary' %>
+  <% end %>
+</div>
+
+

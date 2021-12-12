@@ -1,0 +1,3 @@
+class QmResource < ApplicationRecord
+	
+end

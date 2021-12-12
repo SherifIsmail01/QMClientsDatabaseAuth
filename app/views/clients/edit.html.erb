@@ -1,0 +1,18 @@
+<div id = "edit-client-form" style="text-align: center;">  
+ <h2>Edit Client</h2>
+ <br>
+ <%= form_for @client, url: update_client_path do |f| %>
+   <div>
+     <%= f.text_field :name, placeholder: "Client Name", :class => 'form-control'  %>
+   </div><br>
+   <div>
+     <%= f.text_field :year_end, placeholder: "year end", :class => 'form-control'  %>
+   </div><br>
+      <div>
+     <%= f.text_field :status, placeholder: "status", :class => 'form-control'  %>
+   </div><br>
+   <button class ='btn btn-primary' >Cancel</button>
+   <%= f.submit "Submit Fields", :class => 'btn btn-primary' %>
+ <% end %>
+</div>
+

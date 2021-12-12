@@ -1,0 +1,22 @@
+<section>
+	<h4 id="auditors-title">Auditors Index</h4>
+</section>
+
+<section id= "new_auditor_link">
+<a href="/auditors/new">Add a new Auditor</a>
+</section>
+
+<div>
+Number of Auditors: <%= @auditors.length %>
+</div><br>
+
+<ul>
+  <% @auditors.each do |a| %>
+    <div id="auditor-list">
+    	 Name: <%= a.name %>
+    		<div id="auditor-page">
+    			<a href="/auditors/<%= a.id %>">Auditor Profile</a>
+    		</div>
+    </div>
+  <% end %>
+</ul>

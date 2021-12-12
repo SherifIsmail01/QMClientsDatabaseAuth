@@ -1,0 +1,36 @@
+
+
+
+<div id="back-to-client-years" style="float: right; padding-right: 20px; padding-top: 0px;">
+	<%= link_to "Back to Auditor clients", auditor_clients_path(@auditor, @client) %>
+</div>
+
+<div style="padding-top: 10px; padding-left: 40px;">
+
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<% @years.each do |y| %> 
+		  <li class="nav-item">
+	    	<a class="nav-link active" id="<%=y.id %>" data-toggle="tab" href="/years/<%=y.id %>" role="tab" aria-controls="<%=y.id %>"
+		      aria-selected="true"><%= y.number %></a>
+		  </li>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=y.id %>" role="tabpanel" aria-labelledby="<%=y.id %>">
+						<p></p>
+				</div>
+			</div>
+		<% end %>
+		<div id="add-year" style="padding-left: 10px; padding-top: 10px; ">
+			<%= link_to "Add year", new_client_year_path(@client) %>
+		</div>
+	</ul>
+  
+</div>
+
+
+                           
+
+
+
+
+
+

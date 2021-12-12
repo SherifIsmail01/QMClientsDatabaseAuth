@@ -1,0 +1,15 @@
+<div id="edit-auditor">
+	<%= link_to "Edit this auditor", edit_auditor_path(@auditor) %>
+</div>
+
+
+
+<div id="auditor-profile">
+	<li>Name: <%= @auditor.name%></li>
+	<li>Number of clients: <%= @auditor.clients.length %></li>
+</div>
+
+<div id="auditor-clients">
+	<%= link_to "Auditor clients", auditor_clients_path(@auditor, @clients) %>
+</div>
+

@@ -1,0 +1,162 @@
+<div style="padding-top: 0px; text-align: center">
+	<p><strong><%= @year.number %></strong></p>
+
+</div>
+
+	<ul  class="nav nav-tabs flex-column flex-sm-row" id="year-files" role="navigation">
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/bank_statements" role="tab" aria-controls=""
+		      aria-selected="true">Bank Statements</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/qb_reports" role="tab" aria-controls=""
+		      aria-selected="false">QB reports</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/confirmations" role="tab" aria-controls=""
+		      aria-selected="false">Confirmations</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/testings" role="tab" aria-controls=""
+		      aria-selected="false">Testings</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/report_drafts" role="tab" aria-controls=""
+		      aria-selected="false">Report drafts</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/report_packages" role="tab" aria-controls=""
+		      aria-selected="false">Report Packages</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/bod_munites" role="tab" aria-controls=""
+		      aria-selected="false">Board of Directors munites</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/files_to_send_to_clients" role="tab" aria-controls=""
+		      aria-selected="false">Files to send to clients</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/portals" role="tab" aria-controls=""
+		      aria-selected="false">Portal</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/apgs" role="tab" aria-controls=""
+		      aria-selected="false">Audit Preliminary Guide</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/other_files" role="tab" aria-controls=""
+		      aria-selected="false">Other files</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/permenants" role="tab" aria-controls=""
+		      aria-selected="false">Permenants</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/taxes" role="tab" aria-controls=""
+		      aria-selected="false">Taxes</a>
+		</li>
+
+		<li class="nav-item">
+	    	<a class="nav-link active" id="" data-toggle="tab" href="/years/<%=@year.id%>/schedules" role="tab" aria-controls=""
+		      aria-selected="false">Schedules</a>
+		</li>
+
+	</ul>	
+	<!-- <div id="tab-contents" style="padding-top: 50px; padding-left: 40px; padding-bottom: 40px;">
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Bank Statements</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>QB files</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Testings</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Confirmations</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Report Drafts</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Report Packages</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Board Munites</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Files To be sent</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Portals</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Audit preliminary guide</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Other files</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Permenant</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Tax</p>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="<%=@year.id %>" role="tabpanel" aria-labelledby="<%=@year.id %>">
+						<p>Schedules</p>
+				</div>
+			</div>
+
+</div> -->
+
+	<div id="links-list" style="float: right; padding-right: 20px; padding-top: 120px; padding-bottom: 20px;">
+		<ul>
+			<%= link_to "Back to Client years", client_years_path(@client) %>
+			<%= link_to "delete year", delete_year_path(@year, @client), method: :delete %>
+		</ul>
+	</div>
+
+
+
+

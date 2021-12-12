@@ -1,0 +1,11 @@
+<div id = "edit-auditor-form" style="text-align: center;">  
+ <h2>Edit Auditor</h2>
+ <br>
+ <%= form_for @auditor, url: update_auditor_path do |f| %>
+   <div>
+     <%= f.text_field :name, placeholder: "Auditor Name", :class => 'form-control'  %>
+   </div><br>
+   <%= f.submit "Submit Fields", :class => 'btn btn-primary'  %>
+ <% end %>
+</div>
+
